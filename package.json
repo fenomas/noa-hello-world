@@ -17,7 +17,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "noa-engine": "andyhall/noa#d3211ec75e564031451a3f7fa2d5e5d6cd6d834d"
+    "noa-engine": "andyhall/noa#v0.11.0"
   },
   "devDependencies": {
     "beefy": "^2.1.2",
