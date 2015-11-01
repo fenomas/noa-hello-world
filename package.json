@@ -17,7 +17,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "noa-engine": "andyhall/noa#v0.11.0"
+    "noa-engine": "andyhall/noa#v0.13.0"
   },
   "devDependencies": {
     "markdox": "^0.1.9",

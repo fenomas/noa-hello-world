@@ -20,6 +20,7 @@
  * npm install
  * npm start
  * ```
+ * Then view the demo on `localhost:8080`.
  * 
  * Source is self-explanatory!
 */
@@ -114,7 +115,7 @@ mesh.scaling.x = mesh.scaling.z = w
 mesh.scaling.y = h
 
 // offset of mesh relative to the entity's "position" (center of its feet)
-var offset = [w / 2, h / 2, w / 2]
+var offset = [0, h/2, 0]
 
 // a "mesh" component to the player entity
 noa.entities.addComponent(eid, noa.entities.components.mesh, {
@@ -130,7 +131,7 @@ noa.entities.addComponent(eid, noa.entities.components.mesh, {
 
 // on left mouse, set targeted block to be air
 noa.inputs.down.on('fire', function () {
-	var loc = noa.getTargetBlock()
+	var loc = noa.getTargetBlockPosition()
 	if (loc) noa.setBlock(0, loc);
 })
 
