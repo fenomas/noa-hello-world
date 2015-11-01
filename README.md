@@ -18,6 +18,7 @@ cd noa-hello-world
 npm install
 npm start
 ```
+Then view the demo on `localhost:8080`.
 
 Source is self-explanatory!
 

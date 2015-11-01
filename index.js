@@ -20,6 +20,7 @@
  * npm install
  * npm start
  * ```
+ * Then view the demo on `localhost:8080`.
  * 
  * Source is self-explanatory!
 */
@@ -35,6 +36,7 @@ var opts = {
 	// chunkSize: 32,
 	// chunkAddDistance: 1,
 	// chunkRemoveDistance: 3,
+	// blockTestDistance: 20,
 	// texturePath: 'textures/',
 	// playerStart: [0.5,15,0.5],
 	// playerHeight: 1.4,
@@ -102,9 +104,9 @@ function getHeightMap(x, z) {
 
 // get the player entity's ID and other info (aabb, size)
 var eid = noa.playerEntity
-var boundingBox = noa.entities.getAABB(eid)
-var w = boundingBox.width()
-var h = boundingBox.height()
+var dat = noa.entities.getPositionData(eid)
+var w = dat.width
+var h = dat.height
 
 // make a Babylon.js mesh and scale it, etc.
 var scene = noa.rendering.getScene()  // Babylon's "Scene" object
@@ -113,7 +115,7 @@ mesh.scaling.x = mesh.scaling.z = w
 mesh.scaling.y = h
 
 // offset of mesh relative to the entity's "position" (center of its feet)
-var offset = [w / 2, h / 2, w / 2]
+var offset = [0, h/2, 0]
 
 // a "mesh" component to the player entity
 noa.entities.addComponent(eid, noa.entities.components.mesh, {
@@ -129,7 +131,7 @@ noa.entities.addComponent(eid, noa.entities.components.mesh, {
 
 // on left mouse, set targeted block to be air
 noa.inputs.down.on('fire', function () {
-	var loc = noa.getTargetBlock()
+	var loc = noa.getTargetBlockPosition()
 	if (loc) noa.setBlock(0, loc);
 })
 
