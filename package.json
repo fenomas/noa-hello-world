@@ -1,6 +1,6 @@
 {
   "name": "noa-hello-world",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Minimal hello-world app for the noa engine",
   "main": "index.js",
   "scripts": {
