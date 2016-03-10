@@ -4,7 +4,7 @@
   "description": "Minimal hello-world app for the noa engine",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server index.js --inline",
+    "start": "webpack-dev-server index.js -d --inline",
     "doc": "echo \"require('markdox').process('index.js', {output:'README.md', template:'doctemplate.ejs', dox:{skipSingleStar:true} })\" | node"
   },
   "author": "Andy Hall",
@@ -17,7 +17,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "noa-engine": "andyhall/noa#v0.13.0"
+    "noa-engine": "andyhall/noa#v0.14.0"
   },
   "devDependencies": {
     "markdox": "^0.1.9",

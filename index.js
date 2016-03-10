@@ -118,7 +118,7 @@ mesh.scaling.y = h
 var offset = [0, h/2, 0]
 
 // a "mesh" component to the player entity
-noa.entities.addComponent(eid, noa.entities.components.mesh, {
+noa.entities.addComponent(eid, noa.entities.names.mesh, {
 	mesh: mesh,
 	offset: offset
 })
