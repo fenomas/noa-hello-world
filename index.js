@@ -3,6 +3,30 @@
 
 
 /** 
+ * # Deprecated
+ * 
+ * .
+ * 
+ * .
+ * 
+ * .
+ * 
+ * >  
+ * > This has been rolled into the main [noa](https://github.com/andyhall/noa)
+ * repo as `/examples/hello-world/`. 
+ * > 
+ * > Go look there!
+ * >  
+ * 
+ * .
+ * 
+ * .
+ * 
+ * .
+ */
+
+
+/** 
  * @class noa-hello-world
  * 
  * A *minimal* implementation of a voxel game built on the 

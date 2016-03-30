@@ -2,6 +2,27 @@
 
 <!-- Start index.js -->
 
+  # Deprecated
+
+.
+
+.
+
+.
+
+>  
+> This has been rolled into the main [noa](https://github.com/andyhall/noa)
+repo as `/examples/hello-world/`. 
+> 
+> Go look there!
+>  
+
+.
+
+.
+
+.
+
 ## noa-hello-world 
 A *minimal* implementation of a voxel game built on the 
 [noa](https://github.com/andyhall/noa) engine. For a
